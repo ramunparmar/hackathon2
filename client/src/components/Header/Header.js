@@ -1,4 +1,7 @@
 import { Link } from 'react-router-dom';
+import Logo from '../../assets/images/Logo/RECORDS.svg';
+import User from '../../assets/icons/user.svg';
+import Menu from '../../assets/icons/menu.svg';
 import './Header.scss';
 
 function Header() {
@@ -6,11 +9,11 @@ function Header() {
         <>
         <header className="header">
             <nav className="header__nav">
-                <div>Menu</div>
+                <img className="header__icon" src={Menu} alt="menu"/>
                 <Link to={'/'} className="header__nav-link">
-                    RECORDS
+                    <img className="header__logo" src={Logo} alt="logo"/>
                 </Link>
-                <div>User</div>
+                <img className="header__icon" src={User} alt="user"/>
             </nav>
         </header>
         </>
