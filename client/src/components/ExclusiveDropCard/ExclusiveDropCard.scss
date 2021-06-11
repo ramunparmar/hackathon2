@@ -1,0 +1,71 @@
+@use '../../partials/mixins' as *;
+@use '../../partials/variables' as *;
+
+.exclusive-drop-card {
+    width: 9rem;
+    height: 13rem;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px -5px;
+    border-radius: 10px;
+    background-color: $color-app-slate;
+
+
+    &__image {
+        overflow: hidden;
+        height: 7.5rem;
+        width: 9rem;
+    }
+
+    &__song-container {
+        background-color: white;
+        padding: 0.25rem;
+    }
+
+
+    &__song-name {
+        font-size: 1rem;
+    }
+
+    &__artist-container {
+        display: flex;
+        align-items: center;
+
+    }
+
+    &__artist-image {
+        height: 1rem;
+        width: 1rem;
+        border-radius: 50%;
+    }
+
+    &__artist-name {
+        font-weight: 400;
+        font-size: 0.75rem;
+        padding-left: 0.5rem;
+    }
+
+    &__bid-section {
+        display: flex;
+        background-color: $color-app-slate;
+        padding: 0.25rem;
+    }
+
+    &__bid-header {
+        font-size: 0.75rem;
+        color: white;
+    }
+
+    &__bid-details {
+        font-size: 9px;
+        color: $color-app-lightyellow;
+        padding-top: 0.5rem;
+    }
+
+    &__time-container {
+        padding-left: 0.5rem;
+    }
+
+
+
+
+}

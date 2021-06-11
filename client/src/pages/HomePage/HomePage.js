@@ -1,4 +1,5 @@
 import React from 'react';
+import ExclusiveDropCard from '../../components/ExclusiveDropCard/ExclusiveDropCard';
 
 function HomePage() {
     return (
