@@ -12,31 +12,38 @@
     &__exclusive-drops-container {
         display: flex;
         flex-direction: column;
+        padding-left: 1rem;
+        padding-top: 3rem;
     }
 
     &__exclusive-drops-header-container {
         display: flex;
         justify-content: space-between;
+        padding: 0 1rem;
     }
 
     &__exclusive-drops-cards {
         display: flex;
+        padding-top: 1rem;
     }
 
 
     &__live-auctions-container {
         display: flex;
         flex-direction: column;
+        padding-left: 1rem;
         padding-top: 3rem;
     }
 
     &__live-auctions-header-container {
         display: flex;
         justify-content: space-between;
+        padding: 0 1rem;
     }
 
     &__live-auctions-cards {
         display: flex;
+        padding-top: 1rem;
     }
 
 
