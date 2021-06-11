@@ -1,0 +1,16 @@
+[
+    {
+        "id": "1",
+        "artistID": "1",
+        "name": "Song Title",
+        "description": "Our first single, this is a description",
+        "image": "http://localhost:3000/assets/album-cover.jpg"
+      },
+      {
+        "id": "2",
+        "artistID": "2",
+        "name": "Song Title",
+        "description": "Our first single, this is a description",
+        "image": "http://localhost:3000/assets/album-cover.jpg"
+      }
+]
