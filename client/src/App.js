@@ -6,6 +6,7 @@ import ArtistPage from './pages/ArtistPage/ArtistPage';
 import AuctionPage from './pages/AuctionPage/AuctionPage';
 import PaymentPage from './pages/PaymentPage/PaymentPage';
 import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Route path="/payment" component={PaymentPage} />
       <Redirect to="/" />
     </Switch>
+    <Footer/>
     </BrowserRouter>
   );
 }
