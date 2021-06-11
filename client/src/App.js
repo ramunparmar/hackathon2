@@ -14,8 +14,9 @@ function App() {
     <Switch>
       <Route path="/" exact component={HomePage} />
       <Route path="/explore" component={ExplorePage} />
-      <Route path="/:artist" component={ArtistPage} />
-      <Route path="/auction" component={AuctionPage} />
+      <Route path="/artist" component={ArtistPage} exact/>
+      <Route path="/artist/:id" component={ArtistPage} />
+      <Route path="/auction" component={AuctionPage} exact/>
       <Route path="/payment" component={PaymentPage} />
       <Redirect to="/" />
     </Switch>
