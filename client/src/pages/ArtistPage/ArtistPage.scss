@@ -1,0 +1,62 @@
+@use '../../partials/mixins' as *;
+@use '../../partials/variables' as *;
+
+.artist {
+    height: 100%;
+    background-color: $color-app-lightgrey;
+
+    &__hero {
+        margin-top: 5rem;
+        height: 50vh;
+        background-image: url("../../assets/images/Artist/thescotts.png");
+        background-size: cover;
+        display: flex;
+        align-items: flex-end;
+        padding-bottom: 15px;
+
+    }
+
+    &__genre {
+        display: flex;
+        justify-content: center;
+        background-color: rgba(255,255,0,0.95);
+        width: 25%;
+        border-radius: 4px;
+        padding: 0.5rem;
+        position: relative;
+        bottom: -1rem;
+        left: 1rem;
+        z-index: 1;
+    }
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px 15px 0 0;
+        width: 100%;
+        position: relative;
+        top: -15px;
+        background-color: $color-app-lightgrey;
+        padding: 2rem;
+
+        &--title {
+            font-size: 3rem;
+            color: $color-app-slate;
+            padding: 1rem;
+        }
+
+        &--followers {
+            font-size: 1rem;
+            color: $color-text-black;
+            padding-bottom: 0.5rem;
+        }
+
+        &--social {
+            font-size: 1rem;
+            color: $color-text-grey;
+
+        }
+    }
+}

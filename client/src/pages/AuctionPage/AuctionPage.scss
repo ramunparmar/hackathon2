@@ -1,0 +1,56 @@
+@use '../../partials/mixins' as *;
+@use '../../partials/variables' as *;
+
+.auction {
+    margin-top: 5rem;
+    background-color: $color-app-lightgrey;
+
+    &__nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100vw;
+        height: 3rem;
+        padding: 2rem;
+        border-bottom: 1px solid $color-app-lightgrey;
+
+        &-link {
+            width: 40%;
+        }
+    }
+
+    &__item {
+        display: flex;
+        margin-top: 3rem;
+        justify-content: center;
+        width: 100vw;
+
+        &__container {
+            height: 100vh;
+            width: 80%;
+            border-radius: 10px;
+        }
+
+        &__preview {
+            height: 50%;
+            background-image: url("../../assets/images/Artist/thescotts.png");
+            background-size: cover;
+            background-color: rgba(248, 247, 216, 0.7);
+            border-radius: 10px 10px 0 0;
+            color: $color-app-lightgrey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__details {
+            background-color: $color-app-lightgrey;
+        }
+    }
+
+    &__offers {
+        margin-bottom: 5rem;
+        padding: 2rem;
+    }
+}
