@@ -54,8 +54,8 @@
             width: 8rem;
             height: 8rem;
             border-radius: 50%;
-            background-image: url(../../assets/images/Artist/thescotts.png);
             background-size: cover;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);            
         }
 
         &--title {
@@ -72,12 +72,61 @@
         &--card {
             width: 40%;
             height: 8rem;
-            background-image: url(../../assets/images/Explore/chill.png);
             background-size: cover;
+            color: #FFFFFF;
             padding: 1rem;
             margin: 1rem;
+            display: flex;
+            align-items: center;
             border-radius: 4px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+            &favourites {
+                background-image: url(../../assets/images/Explore/chill.png);
+            }
+
+            &--favourites {
+                background-image: url(../../assets/images/Explore/chill.png);
+            }
+
         }
     }
 
 }
+
+.favourites {
+    background-image: url(../../assets/images/Explore/classical.png);
+}
+
+.rb {
+    background-image: url(../../assets/images/Explore/r_b.png);
+}
+
+.hiphop{
+    background-image: url(../../assets/images/Explore/malibu.png);
+}
+
+.country {
+    background-image: url(../../assets/images/Explore/country.png);
+}
+
+.folk {
+    background-image: url(../../assets/images/Explore/folk_acoustic.png);
+}
+
+.chill {
+    background-image: url(../../assets/images/Explore/chill.png);
+}
+
+.scott {
+    background-image: url(../../assets/images/Artist/thescotts.png);
+}
+
+.cory {
+    background-image: url(../../assets/images/Artist/pink_clouds.png);
+}
+
+.ashley {
+    background-image: url(../../assets/images/Explore/ashley.png);
+}
+
