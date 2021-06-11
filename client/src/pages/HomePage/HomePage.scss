@@ -2,6 +2,91 @@
 @use '../../partials/variables' as *;
 
 .home {
-    background-color: red;
-    height: 100vh;
+
+
+    &__dj-image {
+        width: 100%;
+        height: 18rem;
+    }
+
+    &__exclusive-drops-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__exclusive-drops-header-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__exclusive-drops-cards {
+        display: flex;
+    }
+
+
+    &__live-auctions-container {
+        display: flex;
+        flex-direction: column;
+        padding-top: 3rem;
+    }
+
+    &__live-auctions-header-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__live-auctions-cards {
+        display: flex;
+    }
+
+
+    &__top-songs-header {
+        padding: 4rem 0 1rem 2rem;
+    }
+
+    &__top-songs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__top-song {
+        display: flex;
+        justify-content: space-between;
+        border-top: solid 1px $color-app-lightgrey;
+        border-bottom: solid 1px $color-app-lightgrey;
+        padding: 1rem 2rem;
+    }
+
+    &__song {
+        display: flex;
+        align-items: center;
+    }
+
+    &__song-image {
+        height: 3rem;
+        width: 3rem;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+
+    &__song-name {
+        padding-left: 1rem;
+    }
+
+    &__current-bid {
+        display: flex;
+    }
+
+    &__bid-amount {
+        padding-left: 0.5rem;
+        color: $color-app-slate;
+    }
+
+    &__bids-bought {
+        color: $color-app-slate;
+    }
+
+
+
+
 }
