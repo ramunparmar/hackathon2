@@ -1,7 +1,7 @@
 import React from 'react';
 import { Component } from "react";
-import axios from "axios";
 import './ArtistPage.scss';
+import { Link } from "react-router-dom";
 import foolsCover from '../../assets/images/Marketplace/fools.png';
 import sugarCover from '../../assets/images/Marketplace/sugar.png';
 import downUnderCover from '../../assets/images/Marketplace/down_under.png';
@@ -12,20 +12,20 @@ class ArtistPage extends Component {
         artists: [],
     }
 
-    getArtist() {
-        axios
-          .get(`http://localhost:5000/artists`)
-          .then((artist) => {
-            this.setState({
-              artists: artist,
-            });
-          })
-          .catch((err) => console.error(err));
-      }
+    // getArtist() {
+    //     axios
+    //       .get(`http://localhost:5000/artists`)
+    //       .then((artist) => {
+    //         this.setState({
+    //           artists: artist,
+    //         });
+    //       })
+    //       .catch((err) => console.error(err));
+    //   }
     
-    componentDidMount() {
-        this.getArtist();
-    }
+    // componentDidMount() {
+    //     this.getArtist();
+    // }
     
 
     render() {
@@ -47,12 +47,13 @@ class ArtistPage extends Component {
                 </div>
               </div>
               <div className="home__top-songs">
+        <Link to="/auction" className="home__exclusive-drops-header-link">
         <div className="home__top-song">
             <div className="home__song">
+            <p className="home__rank">1</p>
                 <img src={foolsCover} alt="" className="home__song-image" />
                 <div className="home__song-name">
-                    <h4 className="home__song-header">Fools</h4>
-                    <p className="home__song-artist-name">Troy Smith</p>
+                    <h4 className="home__song-header">Outside</h4>
                 </div>
             </div>
             <div className="home__song-bid">
@@ -63,13 +64,15 @@ class ArtistPage extends Component {
                 <p className="home__bids-bought">12 bought in last hour</p>
             </div>
         </div>
+        </Link>
 
+        <Link to="/auction" className="home__exclusive-drops-header-link">
         <div className="home__top-song">
             <div className="home__song">
-                <img src={sugarCover} alt="" className="home__song-image" />
+            <p className="home__rank">2</p>
+            <img src={foolsCover} alt="" className="home__song-image" />
                 <div className="home__song-name">
-                    <h4 className="home__song-header">Sugar</h4>
-                    <p className="home__song-artist-name">Megan Swift</p>
+                    <h4 className="home__song-header">At the Disco</h4>
                 </div>
             </div>
             <div className="home__song-bid">
@@ -80,13 +83,15 @@ class ArtistPage extends Component {
                 <p className="home__bids-bought">9 bought in last hour</p>
             </div>
         </div>
+        </Link>
 
+        <Link to="/auction" className="home__exclusive-drops-header-link">
         <div className="home__top-song">
             <div className="home__song">
-                <img src={downUnderCover} alt="" className="home__song-image" />
+            <p className="home__rank">3</p>
+            <img src={foolsCover} alt="" className="home__song-image" />
                 <div className="home__song-name">
-                    <h4 className="home__song-header">Down Under</h4>
-                    <p className="home__song-artist-name">Club 23</p>
+                    <h4 className="home__song-header">Hands Up High</h4>
                 </div>
             </div>
             <div className="home__song-bid">
@@ -97,6 +102,7 @@ class ArtistPage extends Component {
                 <p className="home__bids-bought">8 bought in last hour</p>
             </div>
         </div>
+        </Link>
         </div>
                 {console.log(this.state.artists.data)}
             </section>

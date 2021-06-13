@@ -10,11 +10,11 @@
 
     &__header{
         margin-top: 5rem;
-        padding: 1rem;
+        padding: 1rem 2rem;
     }
 
     &__subheader {
-        padding: 1rem 3rem;
+        padding: 1rem 2rem;
     }
 
     &__search {
@@ -68,6 +68,7 @@
         flex-wrap: wrap;
         justify-content: center;
         padding: 1rem;
+        background-color: $color-app-lightgrey;
 
         &--card {
             width: 40%;
@@ -80,6 +81,8 @@
             align-items: center;
             border-radius: 4px;
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            font-weight: 600;
+            font-size: 1.25rem;
 
             &favourites {
                 background-image: url(../../assets/images/Explore/chill.png);
@@ -129,5 +132,3 @@
 .ashley {
     background-image: url(../../assets/images/Explore/ashley.png);
 }
-
-TEST
