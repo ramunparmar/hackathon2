@@ -3,6 +3,22 @@
 
 .home {
 
+    &__rank {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(255,255,0,0.95);
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        padding: 0.5rem;
+        position: relative;
+        bottom: -1rem;
+        left: 1rem;
+        z-index: 1;
+        font-size: 0.75rem;
+    }
+
 
     &__dj-image {
         width: 100%;
@@ -16,10 +32,18 @@
         padding-top: 3rem;
     }
 
-    &__exclusive-drops-header-container {
-        display: flex;
-        justify-content: space-between;
-        padding: 0 1rem;
+    &__exclusive-drops-header {
+        &-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 1rem;
+         }
+
+         &-link {
+            text-decoration: inherit;
+            color: inherit;
+         }
+
     }
 
     &__exclusive-drops-cards {
@@ -28,11 +52,19 @@
     }
 
 
-    &__live-auctions-container {
-        display: flex;
-        flex-direction: column;
-        padding-left: 1rem;
-        padding-top: 3rem;
+    &__live-auctions {
+    
+        &-header-link {
+            text-decoration: inherit;
+            color: inherit;
+        }
+    
+        &-container {
+            display: flex;
+            flex-direction: column;
+            padding-left: 1rem;
+            padding-top: 3rem;
+            }
     }
 
     &__live-auctions-header-container {
@@ -54,19 +86,27 @@
     &__top-songs {
         display: flex;
         flex-direction: column;
+        margin-bottom: 5rem;
     }
 
     &__top-song {
         display: flex;
         justify-content: space-between;
-        border-top: solid 1px $color-app-lightgrey;
-        border-bottom: solid 1px $color-app-lightgrey;
+        border-top: solid 1px #D5DBDB;
         padding: 1rem 2rem;
     }
 
     &__song {
         display: flex;
         align-items: center;
+
+        &-bid {
+            padding-left: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
     }
 
     &__song-image {
@@ -82,6 +122,8 @@
 
     &__current-bid {
         display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     &__bid-amount {

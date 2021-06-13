@@ -10,19 +10,23 @@ import Footer from './components/Footer/Footer';
 
 function App() {
   return (
-    <BrowserRouter>
-    <Header />
-    <Switch>
-      <Route path="/" exact component={HomePage} />
-      <Route path="/explore" component={ExplorePage} />
-      <Route path="/artist" component={ArtistPage} exact/>
-      <Route path="/artist/:id" component={ArtistPage} />
-      <Route path="/auction" component={AuctionPage} exact/>
-      <Route path="/payment" component={PaymentPage} />
-      <Redirect to="/" />
-    </Switch>
-    <Footer/>
-    </BrowserRouter>
+    <div className="app">
+      <div className="app__container">
+        <BrowserRouter>
+          <Header />
+          <Switch>
+            <Route path="/" exact component={HomePage} />
+            <Route path="/explore" component={ExplorePage} />
+            <Route path="/artist" component={ArtistPage} exact/>
+            <Route path="/artist/:id" component={ArtistPage} />
+            <Route path="/auction" component={AuctionPage} exact/>
+            <Route path="/payment" component={PaymentPage} />
+            <Redirect to="/" />
+          </Switch>
+          <Footer/>
+        </BrowserRouter>
+      </div>
+    </div>
   );
 }
 
