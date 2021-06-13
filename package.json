@@ -1,0 +1,24 @@
+{
+  "name": "hackathon2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "netlify-cli": "^3.37.17"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ramunparmar/hackathon2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ramunparmar/hackathon2/issues"
+  },
+  "homepage": "https://github.com/ramunparmar/hackathon2#readme"
+}
